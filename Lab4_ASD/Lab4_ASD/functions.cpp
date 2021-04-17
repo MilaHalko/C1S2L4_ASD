@@ -14,28 +14,34 @@ string ChooseStr () {
     cout << "String #3: '" << str_3 << "'." << endl;
     
     int str_num;
-    
-    do {
     cout << "Which string do you choose (1/2/3): ";
     cin >> str_num;
-    } while (!(str_num < 4)  &&  !(str_num > 0));
     
-    switch (str_num) {
+    bool stop = false;
+    do {
+        switch (str_num) {
             case 1:
                 str = str_1;
+                stop = true;
                 break;
                 
             case 2:
                 str = str_2;
+                stop = true;
                 break;
             
             case 3:
                 str = str_3;
+                stop = true;
                 break;
                 
             default:
+                cout << "Which string do you choose (1/2/3): ";
+                cin >> str_num;
                 break;
-    }
+        }
+    } while (!stop);
+    
     
     return str;
 }

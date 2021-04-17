@@ -1,28 +1,25 @@
 #include "allLibs.hpp"
 #include "classList.hpp"
+#include "functions.hpp"
 
 int main() {
     
+    string str = ChooseStr();
     List words;
-    string str = " dog, bra, canoe, claim, furniture, deck, cola, fashion, bike, sound, money, opportunity";
+    PushWords(str, words);
     
-    while (!str.empty()) {
-        
-        int pos = 0;
-        
-        while (isalpha(str[pos])) {
-            pos++;
-        }
-        if (pos == 0) {
-            str.erase(0,1);
-        }
-        else {
-            string word = str.substr(0, pos);
-            words.Push(word);
-            str.erase(0, pos);
-        }
-    }
+    cout << "\nWords in list: '";
     words.Print();
+    cout << "'" << endl;
+    
+    int length;
+    cout << "\nWrite word's length (all words with this length will be deleted): "; cin >> length;
+        
+    words.Search_and_Delete(length);
+    
+    cout << "\nFinal string:  '";
+    words.Print();
+    cout << "'" << endl;
     
     return 0;
 }

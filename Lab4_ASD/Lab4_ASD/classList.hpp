@@ -1,3 +1,4 @@
+#pragma once
 #include "allLibs.hpp"
 
 class Node {
@@ -22,6 +23,6 @@ class List {
 public:
     List();
     void Push (string word);
-    void Search_and_Delete (string word);
+    void Search_and_Delete (int length);
     void Print();
 };

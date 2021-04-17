@@ -18,12 +18,12 @@ void List::Push(string word) {
 }
 
 
-void List::Search_and_Delete (string word) {
+void List::Search_and_Delete (int length) {
     
     Node *current = head;
     
     while (current != nullptr) {
-        if (word == current->word) {
+        if (length == current->word.size()) {
             DeleteWord(current);
         }
         current = current->next;
@@ -65,10 +65,11 @@ void List::DeleteWord(Node *current) {
 
 void List::Print() {
     
-    Node *current = this->head;
-    while (current != nullptr)
+    Node *current = head;
+    while (current != tail)
     {
-        cout << current->word << "   ";
+        cout << current->word << ", ";
         current = current->next;
     }
+    cout << tail->word;
 }

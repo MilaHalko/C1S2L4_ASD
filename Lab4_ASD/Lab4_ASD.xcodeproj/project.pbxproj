@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		21D75119262A4DC700E781D1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D75118262A4DC700E781D1 /* main.cpp */; };
 		21D75128262A4E7C00E781D1 /* classList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D75126262A4E7C00E781D1 /* classList.cpp */; };
+		21D7512D262AFF6B00E781D1 /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21D7512B262AFF6B00E781D1 /* functions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		21D75122262A4E1200E781D1 /* allLibs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = allLibs.hpp; sourceTree = "<group>"; };
 		21D75126262A4E7C00E781D1 /* classList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = classList.cpp; sourceTree = "<group>"; };
 		21D75127262A4E7C00E781D1 /* classList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = classList.hpp; sourceTree = "<group>"; };
+		21D7512B262AFF6B00E781D1 /* functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
+		21D7512C262AFF6B00E781D1 /* functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				21D75118262A4DC700E781D1 /* main.cpp */,
+				21D7512B262AFF6B00E781D1 /* functions.cpp */,
+				21D7512C262AFF6B00E781D1 /* functions.hpp */,
 				21D75127262A4E7C00E781D1 /* classList.hpp */,
 				21D75126262A4E7C00E781D1 /* classList.cpp */,
 				21D75122262A4E1200E781D1 /* allLibs.hpp */,
@@ -126,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21D75128262A4E7C00E781D1 /* classList.cpp in Sources */,
+				21D7512D262AFF6B00E781D1 /* functions.cpp in Sources */,
 				21D75119262A4DC700E781D1 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
